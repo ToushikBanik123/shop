@@ -5,174 +5,871 @@ void main() {
   runApp( MyApp());
 }
 
+
 class MyApp extends StatefulWidget {
   //const MyApp({Key? key}) : super(key: key);
 
   @override
   _MyAppState createState() => _MyAppState();
 }
-
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: Colors.white,
+          backgroundColor: const Color.fromARGB(255, 249, 249, 100),
           body: Row(
             children: [
               Expanded(
-                child: Column(
+                child: ListView(
                   children: [
                     const SizedBox(
-                      height: 80,
+                      height: 50,
                     ),
-                    Stack(
-                      clipBehavior: Clip.none,
-                      children: [
-                        Container(
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                        child: TextButton(
+                          child: Stack(
+                            clipBehavior: Clip.none,
+                            children: [
+                              Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                  height: 200.0,
+                                  width: 150.0,
+                                  decoration: BoxDecoration(
+                                    color: const Color.fromARGB(255, 255, 255, 255),
+                                    borderRadius: BorderRadius.circular(30),
+                                  )
+                              ),
+                              Positioned(
+                                left: 0,
+                                right: 0,
+                                top: -40,
+                                child: Center(
+                                  child: Container(
+                                    width: 120,
+                                    height: 120,
+                                    decoration: const BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      image: DecorationImage(
+                                        image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                        fit: BoxFit.fitWidth,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
 
-                            height: 200.0,
-                            width: 150.0,
-                            decoration: BoxDecoration(
-                              color: Colors.orange,
-                              borderRadius: BorderRadius.circular(30),
-                            )
+                            ],
+                          ),
+                          onPressed: (){
+                            print('hi1');
+                          },
                         ),
-                        Positioned(
-                          left: 0,
-                          right: 0,
-                          top: -40,
-                          child: Center(
-                            child: Container(
-                              width: 120,
-                              height: 120,
-                              decoration: const BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                  image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
-                                  fit: BoxFit.fitWidth,
+                      ),
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ),
 
-                      ],
-                    ),
-                    const SizedBox(
-                      height: 80,
-                    ),
-                    Stack(
-                      clipBehavior: Clip.none,
-                      children: [
-                        Container(
-
-                            height: 200.0,
-                            width: 150.0,
-                            decoration: BoxDecoration(
-                              color: Colors.orange,
-                              borderRadius: BorderRadius.circular(30),
-                            )
+                          ],
                         ),
-                        Positioned(
-                          left: 0,
-                          right: 0,
-                          top: -40,
-                          child: Center(
-                            child: Container(
-                              width: 120,
-                              height: 120,
-                              decoration: const BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                  image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
-                                  fit: BoxFit.fitWidth,
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ),
 
-                      ],
+                          ],
+                        ),
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
                     ),
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
+                    ),
+
+
+
                   ],
                 ),
               ),
               Expanded(
-                child: Column(
+                child: ListView(
                   children: [
                     const SizedBox(
-                      height: 80,
+                      height: 200,
                     ),
-                    Stack(
-                      clipBehavior: Clip.none,
-                      children: [
-                        Container(
-
-                            height: 200.0,
-                            width: 150.0,
-                            decoration: BoxDecoration(
-                              color: Colors.orange,
-                              borderRadius: BorderRadius.circular(30),
-                            )
-                        ),
-                        Positioned(
-                          left: 0,
-                          right: 0,
-                          top: -40,
-                          child: Center(
-                            child: Container(
-                              width: 120,
-                              height: 120,
-                              decoration: const BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                  image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
-                                  fit: BoxFit.fitWidth,
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ),
 
-                      ],
-                    ),
-                    const SizedBox(
-                      height: 80,
-                    ),
-                    Stack(
-                      clipBehavior: Clip.none,
-                      children: [
-                        Container(
-
-                            height: 200.0,
-                            width: 150.0,
-                            decoration: BoxDecoration(
-                              color: Colors.orange,
-                              borderRadius: BorderRadius.circular(30),
-                            )
+                          ],
                         ),
-                        Positioned(
-                          left: 0,
-                          right: 0,
-                          top: -40,
-                          child: Center(
-                            child: Container(
-                              width: 120,
-                              height: 120,
-                              decoration: const BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                  image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
-                                  fit: BoxFit.fitWidth,
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ),
 
-                      ],
+                          ],
+                        ),
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.all(20),
+                      child: TextButton(
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                                child:  Center(
+                                  child: Container(
+                                    padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                    child: const Text(
+                                      'Veggie tomato mix',
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                height: 200.0,
+                                width: 150.0,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(30),
+                                )
+                            ),
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              top: -40,
+                              child: Center(
+                                child: Container(
+                                  width: 120,
+                                  height: 120,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        onPressed: (){
+                          print('hi1');
+                        },
+                      ),
                     ),
                   ],
                 ),
