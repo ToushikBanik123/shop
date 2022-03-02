@@ -18,7 +18,8 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: const Color.fromARGB(255, 249, 249, 100),
+          backgroundColor: const Color.fromARGB(255, 246, 246, 242),
+
           body: Row(
             children: [
               Expanded(
@@ -35,9 +36,9 @@ class _MyAppState extends State<MyApp> {
                                 child:  Center(
                                   child: Container(
                                     padding: const EdgeInsets.fromLTRB(35,70,35,10),
-                                    child: const Text(
-                                      'Veggie tomato mix',
-                                      style: TextStyle(
+                                    child: Text(
+                                      'Your Food No: ${index}',
+                                      style: const TextStyle(
                                         fontSize: 20.0,
                                         color: Colors.red,
                                       ),
@@ -49,6 +50,14 @@ class _MyAppState extends State<MyApp> {
                                 decoration: BoxDecoration(
                                   color: const Color.fromARGB(255, 255, 255, 255),
                                   borderRadius: BorderRadius.circular(30),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.blue.withOpacity(0.5),
+                                      spreadRadius: 5,
+                                      blurRadius: 7,
+                                      offset: const Offset(1.0,5.0),
+                                    )
+                                  ]
                                 )
                             ),
                             Positioned(
@@ -82,7 +91,7 @@ class _MyAppState extends State<MyApp> {
               ),
               Expanded(
                 child: ListView.builder(
-                  itemCount: 40,
+                  //itemCount: 40,
                   itemBuilder: (BuildContext context, int index) {
                     return Container(
                       margin: const EdgeInsets.all(20),
@@ -94,9 +103,9 @@ class _MyAppState extends State<MyApp> {
                                 child:  Center(
                                   child: Container(
                                     padding: const EdgeInsets.fromLTRB(35,70,35,10),
-                                    child: const Text(
-                                      'Veggie tomato mix',
-                                      style: TextStyle(
+                                    child: Text(
+                                      'Your Food No: ${index}',
+                                      style: const TextStyle(
                                         fontSize: 20.0,
                                         color: Colors.red,
                                       ),
@@ -106,8 +115,16 @@ class _MyAppState extends State<MyApp> {
                                 height: 200.0,
                                 width: 150.0,
                                 decoration: BoxDecoration(
-                                  color: const Color.fromARGB(255, 255, 255, 255),
-                                  borderRadius: BorderRadius.circular(30),
+                                    color: const Color.fromARGB(255, 255, 255, 255),
+                                    borderRadius: BorderRadius.circular(30),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.blue.withOpacity(0.5),
+                                        spreadRadius: 5,
+                                        blurRadius: 7,
+                                        offset: const Offset(1.0,5.0),
+                                      )
+                                    ]
                                 )
                             ),
                             Positioned(
