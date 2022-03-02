@@ -12,8 +12,12 @@ class foods extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(leading: const Icon(Icons.arrow_back_ios),
-          title: const Text('Spicy Chicken'),
+        appBar: AppBar(leading: const Icon(Icons.arrow_back_ios,
+          color: Colors.black),
+          title: const Text('Spicy Chicken  |',
+            style: TextStyle(fontWeight: FontWeight.bold,
+            color: Colors.black),
+          ),
           backgroundColor:  Colors.transparent,
 
         ),
@@ -53,7 +57,7 @@ class _foodspageState extends State<foodspage> {
                               Container(
                                   child:  Center(
                                     child: Container(
-                                      padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                      padding: const EdgeInsets.fromLTRB(30,70,30,10),
                                       child: Text(
                                         'Your Food No: ${index}',
                                         style: const TextStyle(
@@ -70,7 +74,7 @@ class _foodspageState extends State<foodspage> {
                                       borderRadius: BorderRadius.circular(30),
                                       boxShadow: [
                                         BoxShadow(
-                                          color: const Color.fromARGB(57, 57, 57, 10).withOpacity(0.25),
+                                          color: const Color.fromARGB(57, 57, 57, 10).withOpacity(0.2),
                                           spreadRadius: 0,
                                           blurRadius: 60,
                                           offset: const Offset(0.0,30.0),
@@ -122,12 +126,12 @@ class _foodspageState extends State<foodspage> {
                               Container(
                                   child:  Center(
                                     child: Container(
-                                      padding: const EdgeInsets.fromLTRB(35,70,35,10),
+                                      padding: const EdgeInsets.fromLTRB(30,70,30,10),
                                       child: Text(
                                         'Your Food No: ${index}',
                                         style: const TextStyle(
                                           fontSize: 20.0,
-                                          color: Colors.red,
+                                          color: Colors.black,
                                         ),
                                       ),
                                     ),
@@ -139,7 +143,7 @@ class _foodspageState extends State<foodspage> {
                                       borderRadius: BorderRadius.circular(30),
                                       boxShadow: [
                                         BoxShadow(
-                                          color: const Color.fromARGB(57, 57, 57, 10).withOpacity(0.25),
+                                          color: const Color.fromARGB(57, 57, 57, 10).withOpacity(0.2),
                                           spreadRadius: 0,
                                           blurRadius: 60,
                                           offset: const Offset(0.0,30.0),
